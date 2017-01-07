@@ -1,0 +1,49 @@
+baseurl = "http://roaringbitmap.org"
+author = "Daniel Lemire"
+title = "Roaring Bitmaps"
+languageCode = "en-us"
+theme = "hugof"
+enableRobotsTXT = true
+SectionPagesMenu = ["main", "social"]
+
+[params.meta]
+description = "Roaring Bitmaps"
+keywords = "open source, compression, java, go, c, c++"
+
+[params.hero]
+herotitle = "A better compressed bitset"
+herodiscription = "Roaring bitmaps are compressed bitmaps. They can be hundreds of times faster. "
+btnblue = "Grab one of our research papers"
+btnblueurl = "https://arxiv.org/pdf/1603.06549.pdf"
+btngreen = "Roaring Bitmaps on GitHub"
+btngreenurl = "https://github.com/RoaringBitmap/"
+[params.main]
+contentOneTitle = "Widely used"
+contentTwoTitle = "Portable"
+
+contentOneBody = "Roaring is found in  [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.com), Metamarkets' [Druid](http://druid.io/), [Apache Spark](http://spark.apache.org), [Whoosh](https://pypi.python.org/pypi/Whoosh/), eBay's [Apache Kylin](http://kylin.io). "
+
+contentTwoBody = "There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages ([Java](https://github.com/lemire/RoaringBitmap/), [C, C++](https://github.com/RoaringBitmap/CRoaring), [Go](https://github.com/RoaringBitmap/roaring), [C#](https://github.com/RogueException/CRoaring.Net), [Rust](https://github.com/saulius/croaring-rs), [Python](https://github.com/Ezibenroc/PyRoaringBitMap)...). There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations."
+
+
+[params.footer]
+email = "lemire@gmail.com"
+[[menu.main]]
+name = "About"
+url = "/about"
+
+[[menu.main]]
+name = "Software"
+url = "/software"
+
+[[menu.main]]
+name = "Publications"
+url = "/publications"
+
+[[menu.social]]
+name = "Google Groups"
+url = "https://groups.google.com/forum/#!forum/roaring-bitmaps"
+
+[[menu.social]]
+name = "Github"
+url = "http://github.com/RoaringBitmap"
