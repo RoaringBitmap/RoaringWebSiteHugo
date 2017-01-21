@@ -14,4 +14,4 @@ layout = "single-para"
 *   Galderic Punti, [Player segmentation using bitmap data structures](https://techblog.king.com/player-segmentation-using-bitmap-data-structures/) (at [King Digital Entertainment](https://en.wikipedia.org/wiki/King_(company)), the company behind [Candy Crush](https://en.wikipedia.org/wiki/Candy_Crush_Saga))
 *   Adrien Grand, [Frame of Reference and Roaring Bitmaps](https://www.elastic.co/blog/frame-of-reference-and-roaring-bitmaps) (at Elastic, the company behind [Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch))
 * Conard Lee, [The anatomy of a Druid segment file](https://medium.com/engineers-optimizely/the-anatomy-of-a-druid-segment-file-bed89a93af1e#.46tincja7) (at Optimizely)
-
+* Mark Cooper, [10,000 times faster than MySQL?](https://brigade.engineering/10-000-times-faster-than-mysql-7296389e74bb#.l7ssb4oje) (at Brigade)
