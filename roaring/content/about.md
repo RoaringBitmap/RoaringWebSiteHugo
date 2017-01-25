@@ -12,6 +12,8 @@ Roaring bitmaps are used by several important systems:
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
 *   Metamarkets' [Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
+*   [Netflix Atlas](https://github.com/Netflix/atlas),
+*   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
 *   eBay's [Apache Kylin](http://kylin.io).
 
