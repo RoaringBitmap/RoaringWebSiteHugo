@@ -6,6 +6,11 @@ theme = "hugof"
 enableRobotsTXT = true
 SectionPagesMenu = ["main", "social"]
 
+[params.image]
+ImageURL = "roaring.jpg"
+IconURL = "roaring.jpg"
+ImageCredit = "Picture credit: tambako" 
+
 [params.meta]
 description = "Roaring Bitmaps"
 keywords = "open source, compression, java, go, c, c++"
@@ -21,9 +26,27 @@ btngreenurl = "https://github.com/RoaringBitmap/"
 contentOneTitle = "Widely used"
 contentTwoTitle = "Portable"
 
-contentOneBody = "Roaring is found in  [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.com), Metamarkets' [Druid](http://druid.io/), [Apache Spark](http://spark.apache.org),  [Netflix Atlas](https://github.com/Netflix/atlas), [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki), [Whoosh](https://pypi.python.org/pypi/Whoosh/), eBay's [Apache Kylin](http://kylin.io). "
+contentOneBody = """Roaring is found in 
 
-contentTwoBody = "There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages ([Java](https://github.com/lemire/RoaringBitmap/), [C, C++](https://github.com/RoaringBitmap/CRoaring), [Go](https://github.com/RoaringBitmap/roaring), [C#](https://github.com/RogueException/CRoaring.Net), [Rust](https://github.com/saulius/croaring-rs), [Python](https://github.com/Ezibenroc/PyRoaringBitMap)...). There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations."
+* [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.com), 
+* Metamarkets' [Druid](http://druid.io/), 
+* [Apache Spark](http://spark.apache.org),  
+* [Netflix Atlas](https://github.com/Netflix/atlas), 
+* [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki), 
+* [Whoosh](https://pypi.python.org/pypi/Whoosh/), 
+* eBay's [Apache Kylin](http://kylin.io). """
+
+contentTwoBody = """There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages: 
+
+* [Java](https://github.com/lemire/RoaringBitmap/), 
+* [C, C++](https://github.com/RoaringBitmap/CRoaring), 
+* [Go](https://github.com/RoaringBitmap/roaring), 
+* [C#](https://github.com/RogueException/CRoaring.Net), 
+* [Rust](https://github.com/saulius/croaring-rs), 
+* [Python](https://github.com/Ezibenroc/PyRoaringBitMap)
+* ...
+ 
+There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations."""
 
 
 [params.footer]
