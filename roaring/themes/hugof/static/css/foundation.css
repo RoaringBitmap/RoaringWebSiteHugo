@@ -3466,6 +3466,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   margin-right: 1rem; }
 
 .top-bar-left {
+  padding-left: 2em; /* for background */
   float: left; }
 
 .top-bar-right {
