@@ -50,6 +50,7 @@ There is a serialized [format specification](https://github.com/RoaringBitmap/Ro
 
 
 [params.footer]
+emailtext = "Get in touch"
 email = "lemire@gmail.com"
 [[menu.main]]
 name = "About"
