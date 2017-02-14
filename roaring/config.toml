@@ -64,6 +64,11 @@ url = "/software"
 name = "Publications"
 url = "/publications"
 
+[[menu.main]]
+name = "Talks"
+url = "/talks"
+
+
 [[menu.social]]
 name = "Google Groups"
 url = "https://groups.google.com/forum/#!forum/roaring-bitmaps"
