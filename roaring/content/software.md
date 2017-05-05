@@ -24,6 +24,7 @@ In addition to the Java, C/C++, Python and Go versions described above, there ar
 * Cython: [Roaring Bitmap in Cython](https://github.com/andreasvc/roaringbitmap) by Andreas van Cranenburgh
 * C#: [A .NET library for compressed bit set data structures](https://github.com/BitSetsNet/BitSetsNet)
 * C#: A [.NET Implementation of RoaringBitmap (C#)](https://github.com/Tornhoof/RoaringBitmap)
+* Go: [Pilosa](https://www.pilosa.com/) has its own Go implementation
 * Go: [Roaring Bitmaps - compressed bitmaps in Go](https://github.com/fzandona/goroar) by Fernando Zandona
 * Haskell: [Roaring Bitmaps in Haskell](https://github.com/thsutton/leonine) by Thomas Sutton
 * Java: [Apache Lucene](https://lucene.apache.org/core/) has a Roaring bitmap implementation ([source code](https://github.com/apache/lucene-solr))
