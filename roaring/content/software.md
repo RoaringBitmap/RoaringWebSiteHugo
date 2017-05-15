@@ -11,6 +11,7 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
   *   We have a[ **Python** library wrapping our C code](https://github.com/Ezibenroc/PyRoaringBitMap).
   *   We have a [**Rust** library wrapping our C code](https://github.com/saulius/croaring-rs).
   *   We have a [**Go** library wrapping our C code](https://github.com/RoaringBitmap/gocroaring).    
+  *   We have a [**Redis** Module wrapping our C code](https://github.com/aviggiano/redis-roaring).
   *   We have a [**C#** library wrapping our C code](https://github.com/RogueException/CRoaring.Net). It works under Windows and Linux.
 * We have a pure [**Go** implementation of Roaring](https://github.com/RoaringBitmap/roaring).
 
