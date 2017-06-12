@@ -29,7 +29,7 @@ contentTwoTitle = "Portable"
 
 contentOneBody = """Roaring is found in
 
-* [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.com),
+* [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.co),
 * [Metamarkets' Druid](http://druid.io/),
 * [Apache Spark](http://spark.apache.org),
 * [Netflix Atlas](https://github.com/Netflix/atlas),
