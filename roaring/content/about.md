@@ -15,6 +15,7 @@ Roaring bitmaps are used by several important systems:
 *   Metamarkets' [Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
 *   [Apache Hive](https://hive.apache.org),
+*   [Apache Tez](http://tez.apache.org),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 *   [OpenSearchServer](http://www.opensearchserver.com),
