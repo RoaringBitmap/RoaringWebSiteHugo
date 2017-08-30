@@ -14,6 +14,7 @@ Roaring bitmaps are used by several important systems:
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
 *   Metamarkets' [Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
+*   [Apache Hive](https://hive.apache.org),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 *   [OpenSearchServer](http://www.opensearchserver.com),
@@ -60,5 +61,3 @@ Roaring solves this problem. It works in the following manner. It divides the da
 ## Funding
 
 This work was supported by NSERC grant number 26143.
-
-

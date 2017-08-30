@@ -8,11 +8,11 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
 
 * [RoaringBitmap](https://github.com/lemire/RoaringBitmap/) is a widely used, optimized and robust **Java** library. It supports both regular and off-heap (e.g., memory mapped) bitmaps.
 * The [CRoaring library](https://github.com/RoaringBitmap/CRoaring) is a **C/C++** library that provides an optimized implementation of Roaring for C/C++ programmers. It works under Windows (Visual Studio), Linux (ARM and x64) and macOS.
-  *   We have a[ **Python** library wrapping our C code](https://github.com/Ezibenroc/PyRoaringBitMap).
+  *   We have **Python** libraries wrapping our C code: [PyRoaringBitMap](https://github.com/Ezibenroc/PyRoaringBitMap) and [python-croaring](https://github.com/sunzhaoping/python-croaring).
   *   We have a [**Rust** library wrapping our C code](https://github.com/saulius/croaring-rs).
   *   We have a [**Go** library wrapping our C code](https://github.com/RoaringBitmap/gocroaring).    
   *   We have a [**Redis** Module wrapping our C code](https://github.com/aviggiano/redis-roaring).
-  *   We have a [**C#** library wrapping our C code](https://github.com/RogueException/CRoaring.Net). It works under Windows and Linux.
+  *   We have a [**C#** library wrapping our C code](https://github.com/RogueException/CRoaring.Net). It works under Windows and Linux. See also the  [.NET wrapper around Roaring64Map](https://github.com/RoaringBitmap/RoaringCLI).
 * We have a pure [**Go** implementation of Roaring](https://github.com/RoaringBitmap/roaring).
 
 ## Various ports
