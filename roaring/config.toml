@@ -32,12 +32,13 @@ contentOneBody = """Roaring is found in
 * [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.co),
 * [Metamarkets' Druid](http://druid.io/),
 * [Apache Spark](http://spark.apache.org),
+* [Apache Hive](http://hive.apache.org),
 * [Netflix Atlas](https://github.com/Netflix/atlas),
 * [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 * [OpenSearchServer](http://www.opensearchserver.com),
 * [Cloud Torrent](https://github.com/jpillora/cloud-torrent),
 * [Whoosh](https://pypi.python.org/pypi/Whoosh/),
-* [Pilosa](https://www.pilosa.com/), 
+* [Pilosa](https://www.pilosa.com/),
 * [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
 * eBay's [Apache Kylin](http://kylin.io). """
 
