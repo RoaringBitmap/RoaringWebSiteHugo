@@ -5,6 +5,7 @@ layout = "single-para"
 
 ## Academic Publications by the Roaring Developers
 
+*  Daniel Lemire, Owen Kaser, Nathan Kurz, Luca Deri, Chris O'Hara, François Saint-Jacques, Gregory Ssi-Yan-Kai, Roaring Bitmaps: Implementation of an Optimized Software Library [arXiv:1709.07821](https://arxiv.org/abs/1709.07821)
 *   Samy Chambi, Daniel Lemire, Owen Kaser, Robert Godin, [Better bitmap performance with Roaring bitmaps](http://arxiv.org/pdf/1402.6407), Software: Practice and Experience 46 (5), pages 709-719, May 2016. [arXiv:1402.6407](http://arxiv.org/abs/1402.6407). ([Data used in the paper](http://lemire.me/data/realroaring2014.html))
 *   Daniel Lemire, Gregory Ssi-Yan-Kai, Owen Kaser, [Consistently faster and smaller compressed bitmaps with Roaring](http://arxiv.org/pdf/1603.06549), Software: Practice and Experience 46 (11), pages 1547-1569, November 2016. [arXiv:1603.06549](http://arxiv.org/abs/1603.06549)
 *   Samy Chambi, Daniel Lemire, Robert Godin, Kamel Boukhalfa, Charles Allen, Fangjin Yang, [Optimizing Druid with Roaring bitmaps](http://r-libre.teluq.ca/950/), IDEAS 2016, 2016. Available freely from [ACM](http://dl.acm.org/citation.cfm?id=2938515).
