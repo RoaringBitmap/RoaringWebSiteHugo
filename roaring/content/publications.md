@@ -22,6 +22,8 @@ layout = "single-para"
 
 ## Technical Posts
 
+* Alan Bernstein, [A Map of the Entire Universe](https://www.pilosa.com/blog/universe-map/)
+* Travis Turner, [Using Bitmaps to Perform Range Queries](https://www.pilosa.com/blog/range-encoded-bitmaps/)
 *   Max De Marzi, [Property-level security with Neo4J enterprise](https://maxdemarzi.com/2017/01/17/property-level-security-with-neo4j-enterprise/)
 *   Julia Evans, [Fast integer sets with Roaring Bitmaps (and, making friends with your modern CPU)](https://jvns.ca/blog/2016/01/23/fast-integer-sets-with-roaring-bitmaps/)
 *   Galderic Punti, [Player segmentation using bitmap data structures](https://techblog.king.com/player-segmentation-using-bitmap-data-structures/) (at [King Digital Entertainment](https://en.wikipedia.org/wiki/King_(company)), the company behind [Candy Crush](https://en.wikipedia.org/wiki/Candy_Crush_Saga))
