@@ -23,6 +23,7 @@ Roaring bitmaps are used by several important systems:
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
 *   [Pilosa](https://www.pilosa.com/),
 *   [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
+*   [Tablesaw](https://github.com/jtablesaw/tablesaw),
 *   [Jive Miru](https://github.com/jivesoftware/miru),
 *   eBay's [Apache Kylin](http://kylin.io).
 
