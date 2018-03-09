@@ -23,7 +23,7 @@ Roaring bitmaps are used by several important systems:
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
 *   [InfluxDB](https://www.influxdata.com),
 *   [Pilosa](https://www.pilosa.com/),
-*   [Bleve](http://www.blevesearch.com),
+*   [Couchbase's Bleve](http://www.blevesearch.com),
 *   [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
 *   [Intel's Optimized Analytics Package (OAP)](https://github.com/Intel-bigdata/OAP),
 *   [Tablesaw](https://github.com/jtablesaw/tablesaw),
