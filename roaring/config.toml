@@ -1,4 +1,4 @@
-baseurl = "http://roaringbitmap.org/"
+baseurl = "https://roaringbitmap.org/"
 author = "Daniel Lemire"
 title = "Roaring Bitmaps"
 languageCode = "en-us"
@@ -56,7 +56,8 @@ contentTwoBody = """There are freely available software libraries providing Roar
 * [Go](https://github.com/RoaringBitmap/roaring),
 * [C#](https://github.com/RogueException/CRoaring.Net),
 * [Rust](https://github.com/saulius/croaring-rs),
-* [Python](https://github.com/Ezibenroc/PyRoaringBitMap)
+* [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
+* [D](https://github.com/yuce/droaring),
 * ...
 
 There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations."""
