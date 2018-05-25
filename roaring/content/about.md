@@ -14,21 +14,14 @@ Roaring bitmaps are used by several important systems:
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
 *   Metamarkets' [Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
-*   [Apache Hive](https://hive.apache.org),
-*   [Apache Tez](http://tez.apache.org),
+*   [Apache CarbonData](https://carbondata.apache.org),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 *   [OpenSearchServer](http://www.opensearchserver.com),
 *   [Cloud Torrent](https://github.com/jpillora/cloud-torrent),
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
-*   [InfluxDB](https://www.influxdata.com),
 *   [Pilosa](https://www.pilosa.com/),
-*   [Couchbase's Bleve](http://www.blevesearch.com),
 *   [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
-*   [Intel's Optimized Analytics Package (OAP)](https://github.com/Intel-bigdata/OAP),
-*   [Tablesaw](https://github.com/jtablesaw/tablesaw),
-*   [Jive Miru](https://github.com/jivesoftware/miru),
-*   [Apache Hivemall](http://hivemall.incubator.apache.org),
 *   eBay's [Apache Kylin](http://kylin.io).
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
