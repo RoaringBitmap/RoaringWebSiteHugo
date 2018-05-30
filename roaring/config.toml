@@ -47,6 +47,7 @@ contentOneBody = """Roaring is found in
 * [Intel's Optimized Analytics Package (OAP)](https://github.com/Intel-bigdata/OAP),
 * [Tablesaw](https://github.com/jtablesaw/tablesaw),
 * [Jive Miru](https://github.com/jivesoftware/miru),
+* [Gaffer](https://github.com/gchq/Gaffer),
 * [Apache Hivemall](http://hivemall.incubator.apache.org),
 * eBay's [Apache Kylin](http://kylin.io). """
 

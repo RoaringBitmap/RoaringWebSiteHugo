@@ -22,6 +22,11 @@ Roaring bitmaps are used by several important systems:
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
 *   [Pilosa](https://www.pilosa.com/),
 *   [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
+*   [Intel's Optimized Analytics Package (OAP)](https://github.com/Intel-bigdata/OAP),
+*   [Tablesaw](https://github.com/jtablesaw/tablesaw),
+*   [Jive Miru](https://github.com/jivesoftware/miru),
+*   [Gaffer](https://github.com/gchq/Gaffer),
+*   [Apache Hivemall](http://hivemall.incubator.apache.org),
 *   eBay's [Apache Kylin](http://kylin.io).
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
