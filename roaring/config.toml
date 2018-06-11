@@ -59,6 +59,7 @@ contentTwoBody = """There are freely available software libraries providing Roar
 * [C#](https://github.com/RogueException/CRoaring.Net),
 * [Rust](https://github.com/saulius/croaring-rs),
 * [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
+* [Node/JavaScript](https://github.com/SalvatorePreviti/roaring-node),
 * [D](https://github.com/yuce/droaring),
 * ...
 
