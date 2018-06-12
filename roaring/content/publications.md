@@ -12,6 +12,7 @@ layout = "single-para"
 
 ## Selected Publications
 
+* Jean-François Im, Kishore Gopalakrishna, Subbu Subramaniam, Mayank Shrivastava, Adwait Tumbde, Xiaotian Jiang, Jennifer Dai, Seunghyun Lee, Neha Pawar, Jialiang Li, and Ravi Aringunram. [Pinot: Realtime OLAP for 530 Million Users](https://dl.acm.org/citation.cfm?id=3190661). In Proceedings of the 2018 International Conference on Management of Data (SIGMOD '18), 2018.
 * Jianguo Wang, Chunbin Lin, Yannis Papakonstantinou, Steven Swanson, [An Experimental Study of Bitmap Compression vs. Inverted List Compression](http://db.ucsd.edu/wp-content/uploads/2017/03/sidm338-wangA.pdf), SIGMOD 2017, 2017.
 * Gheorghi Guzun and Guadalupe Canahuate, [Hybrid query optimization for hard-to-compress bit-vectors](http://dl.acm.org/citation.cfm?id=2944337), VLDB, 2016.
 * Firas Abuzaid et al., [Yggdrasil: An Optimized System for Training Deep Decision Trees at Scale](https://papers.nips.cc/paper/6366-yggdrasil-an-optimized-system-for-training-deep-decision-trees-at-scale), NIPS 2016, 2016.
