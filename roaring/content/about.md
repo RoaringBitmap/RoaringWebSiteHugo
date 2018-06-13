@@ -50,7 +50,7 @@ An uncompress BitSet can use a lot of memory. For example, if you take a BitSet 
 
 This being said, there are definitively cases where attempting to use compressed bitmaps is wasteful. For example, if you have a small universe size. E.g., your bitmaps represent sets of integers from [0,n) where n is small (e.g., n=64 or n=128). If you are able to uncompressed BitSet and it does not blow up your memory usage, then compressed bitmaps are probably not useful to you. In fact, if you do not need compression, then a BitSet offers remarkable speed.
 
-
+The sparse scenario is another use case where compressed bitmaps should not be used.
 Keep in mind that random-looking data is usually not compressible. E.g., if you have a small set of
 32-bit random integers, it is not mathematically possible to use far less than 32 bits per integer,
 and attempts at compression can be counterproductive.
