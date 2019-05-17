@@ -9,6 +9,7 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
 * [RoaringBitmap](https://github.com/lemire/RoaringBitmap/) is a widely used, optimized and robust **Java** library. It supports both regular and off-heap (e.g., memory mapped) bitmaps.
 * The [CRoaring library](https://github.com/RoaringBitmap/CRoaring) is a **C/C++** library that provides an optimized implementation of Roaring for C/C++ programmers. It works under Windows (Visual Studio), Linux (ARM and x64) and macOS.
   *   We have **Python** libraries wrapping our C code: [PyRoaringBitMap](https://github.com/Ezibenroc/PyRoaringBitMap) and [python-croaring](https://github.com/sunzhaoping/python-croaring).
+  *   We have a [**Swift** library wrapping our C code](https://github.com/RoaringBitmap/SwiftRoaring).
   *   We have a [**Rust** library wrapping our C code](https://github.com/saulius/croaring-rs).
   *   We have a [**Go** library wrapping our C code](https://github.com/RoaringBitmap/gocroaring).    
   *   We have a [**Node**/JavaScript library wrapping our C code](https://github.com/SalvatorePreviti/roaring-node).

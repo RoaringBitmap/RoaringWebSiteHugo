@@ -57,6 +57,7 @@ contentTwoBody = """There are freely available software libraries providing Roar
 * [C, C++](https://github.com/RoaringBitmap/CRoaring),
 * [Go](https://github.com/RoaringBitmap/roaring),
 * [C#](https://github.com/RogueException/CRoaring.Net),
+* [Swift](https://github.com/RoaringBitmap/SwiftRoaring),
 * [Rust](https://github.com/saulius/croaring-rs),
 * [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
 * [Node/JavaScript](https://github.com/SalvatorePreviti/roaring-node),
