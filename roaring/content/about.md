@@ -12,8 +12,12 @@ Roaring bitmaps are compressed bitmaps which tend to outperform conventional com
 Roaring bitmaps are used by several important systems:
 
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
+* [Apache Hive](http://hive.apache.org),
+* [Apache Tez](http://tez.apache.org),
 *   [Apache Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
+* [Apache Zeppelin](https://zeppelin.apache.org),
+* [Apache Doris](http://doris.incubator.apache.org),
 *   [Apache CarbonData](https://carbondata.apache.org),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
