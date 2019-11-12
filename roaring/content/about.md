@@ -12,12 +12,12 @@ Roaring bitmaps are compressed bitmaps which tend to outperform conventional com
 Roaring bitmaps are used by several important systems:
 
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
-* [Apache Hive](http://hive.apache.org),
-* [Apache Tez](http://tez.apache.org),
+*   [Apache Hive](http://hive.apache.org),
+*   [Apache Tez](http://tez.apache.org),
 *   [Apache Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
-* [Apache Zeppelin](https://zeppelin.apache.org),
-* [Apache Doris](http://doris.incubator.apache.org),
+*   [Apache Zeppelin](https://zeppelin.apache.org),
+*   [Apache Doris](http://doris.incubator.apache.org),
 *   [Apache CarbonData](https://carbondata.apache.org),
 *   [Yandex ClickHouse](https://clickhouse.yandex),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
@@ -32,6 +32,11 @@ Roaring bitmaps are used by several important systems:
 *   [Jive Miru](https://github.com/jivesoftware/miru),
 *   [Gaffer](https://github.com/gchq/Gaffer),
 *   [Apache Hivemall](http://hivemall.incubator.apache.org),
+*   [lindb](https://github.com/lindb/lindb),
+*   [Elasticell](https://github.com/deepfabric/elasticell),
+*   [SourceGraph](https://github.com/sourcegraph/sourcegraph),
+*   [M3](https://github.com/m3db/m3),
+*   [trident](https://github.com/NetApp/trident),
 *   eBay's [Apache Kylin](http://kylin.io).
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
