@@ -43,6 +43,16 @@ There are freely available software libraries providing Roaring bitmaps in almos
 
 There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations.
 
+
+Roaring bitmaps are used in many proprietary systems. For example, it is used at SEEK:
+
+> The SEEK Group is a broad array of companies that specialise in employment and education. We maintain a presence in 18 countries, reach approximately 3 billion people and employ over 10,000 individuals around the world. We invest heavily in AI and technology to deliver on our purpose of helping people live more fulfilling and productive working lives and enjoy a leading position in online employment marketplaces. A core product in online employment is Job Search. We recently released a new version of this search engine, called [Smarter Search](https://www.seek.com.au/about/news/seek-smarter-search-with-ai). It blends AI with advanced search technology and has delivered significant lifts in relevance and performance for both candidates and hirers. The engine indexes a massive volume of data and must answer large volumes of diverse queries with extremely low latency. We invest heavily in our own proprietary technology, but also make use of best-in-class data structures where available. We selected the open source [Roaring Bitmap](https://roaringbitmap.org/) library as the compressed bitset at the core of the matching engine, and it has delivered fantastic speed and stability. Research into fields such as advanced data structures and high performance computing remain extremely important to SEEK and many other technology companies. We are excited to continue our own investments in these fields, along with supporting the open source ecosystem and research community through our graduate programs and sponsorships.
+> 
+> Mark Pritchard,
+> Director of Search and Technology,
+> AI Platform Services,
+> SEEK Limited
+
 ## When should you use a bitmap?
 
 Sets are a fundamental abstraction in software. They can be implemented in various ways, as hash sets, as trees, and so forth. In databases and search engines, sets are often an integral part of indexes. For example, we may need to maintain a set of all documents or rows (represented by numerical identifier) that satisfy some property. Besides adding or removing elements from the set, we need fast functions to compute the intersection, the union, the difference between sets, and so on.
