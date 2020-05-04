@@ -9,7 +9,7 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
 * [RoaringBitmap](https://github.com/lemire/RoaringBitmap/) is a widely used, optimized and robust **Java** library. It supports both regular and off-heap (e.g., memory mapped) bitmaps.
 * The [CRoaring library](https://github.com/RoaringBitmap/CRoaring) is a **C/C++** library that provides an optimized implementation of Roaring for C/C++ programmers. It works under Windows (Visual Studio), Linux (ARM and x64) and macOS.
   *   We have **Python** libraries wrapping our C code: [PyRoaringBitMap](https://github.com/Ezibenroc/PyRoaringBitMap) and [python-croaring](https://github.com/sunzhaoping/python-croaring).
-  *   We have a [**Swift** library wrapping our C code](https://github.com/piotte13/SwiftRoaring).
+  *   We have a [**Swift** library wrapping our C code](https://github.com/RoaringBitmap/SwiftRoaring).
   *   We have a [**Rust** library wrapping our C code](https://github.com/saulius/croaring-rs).
   *   We have a [**Go** library wrapping our C code](https://github.com/RoaringBitmap/gocroaring).    
   *   We have a [**Node**/JavaScript library wrapping our C code](https://github.com/SalvatorePreviti/roaring-node).
@@ -27,9 +27,9 @@ In addition to the Java, C/C++, Python and Go versions described above, there ar
 
 * C++: [izenelib](https://github.com/izenecloud/izenelib/blob/master/include/am/bitmap/RoaringBitmap.h) by izenecloud
 * Cython: [Roaring Bitmap in Cython](https://github.com/andreasvc/roaringbitmap) by Andreas van Cranenburgh
-* C#: [A .NET library for compressed bit set data structures](https://github.com/BitSetsNet/BitSetsNet)
-* C#: A [.NET Implementation of Roaring Bitmap (C#)](https://github.com/Tornhoof/RoaringBitmap)
+* C#: A [.NET library for compressed bit set data structures](https://github.com/BitSetsNet/BitSetsNet)
 * C#: A [C# implementation of Roaring Bitmap](https://github.com/mgholam/MGRB) used by [RaptorDB](https://github.com/mgholam/RaptorDB-Document)
+* C#: A [.NET Implementation of RoaringBitmap (C#)](https://github.com/Tornhoof/RoaringBitmap)
 * Go: [Pilosa](https://www.pilosa.com/) has its own Go implementation
 * Go: [Roaring Bitmaps - compressed bitmaps in Go](https://github.com/fzandona/goroar) by Fernando Zandona
 * Haskell: [Roaring Bitmaps in Haskell](https://github.com/thsutton/leonine) by Thomas Sutton

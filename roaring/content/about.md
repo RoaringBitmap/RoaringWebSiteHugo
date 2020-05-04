@@ -11,10 +11,16 @@ Roaring bitmaps are compressed bitmaps which tend to outperform conventional com
 
 Roaring bitmaps are used by several important systems:
 
+*   [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL query engine,
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
-*   Metamarkets' [Druid](http://druid.io/),
+*   [Apache Hive](http://hive.apache.org),
+*   [Apache Tez](http://tez.apache.org),
+*   [Apache Druid](http://druid.io/),
 *   [Apache Spark](http://spark.apache.org),
+*   [Apache Zeppelin](https://zeppelin.apache.org),
+*   [Apache Doris](http://doris.incubator.apache.org),
 *   [Apache CarbonData](https://carbondata.apache.org),
+*   [Yandex ClickHouse](https://clickhouse.yandex),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 *   [OpenSearchServer](http://www.opensearchserver.com),
@@ -27,11 +33,26 @@ Roaring bitmaps are used by several important systems:
 *   [Jive Miru](https://github.com/jivesoftware/miru),
 *   [Gaffer](https://github.com/gchq/Gaffer),
 *   [Apache Hivemall](http://hivemall.incubator.apache.org),
+*   [lindb](https://github.com/lindb/lindb),
+*   [Elasticell](https://github.com/deepfabric/elasticell),
+*   [SourceGraph](https://github.com/sourcegraph/sourcegraph),
+*   [M3](https://github.com/m3db/m3),
+*   [trident](https://github.com/NetApp/trident),
 *   eBay's [Apache Kylin](http://kylin.io).
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
 
 There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations.
+
+
+Roaring bitmaps are used in many proprietary systems. For example, it is used at SEEK:
+
+> The SEEK Group is a broad array of companies that specialise in employment and education. We maintain a presence in 18 countries, reach approximately 3 billion people and employ over 10,000 individuals around the world. We invest heavily in AI and technology to deliver on our purpose of helping people live more fulfilling and productive working lives and enjoy a leading position in online employment marketplaces. A core product in online employment is Job Search. We recently released a new version of this search engine, called [Smarter Search](https://www.seek.com.au/about/news/seek-smarter-search-with-ai). It blends AI with advanced search technology and has delivered significant lifts in relevance and performance for both candidates and hirers. The engine indexes a massive volume of data and must answer large volumes of diverse queries with extremely low latency. We invest heavily in our own proprietary technology, but also make use of best-in-class data structures where available. We selected the open source [Roaring Bitmap](https://roaringbitmap.org/) library as the compressed bitset at the core of the matching engine, and it has delivered fantastic speed and stability. Research into fields such as advanced data structures and high performance computing remain extremely important to SEEK and many other technology companies. We are excited to continue our own investments in these fields, along with supporting the open source ecosystem and research community through our graduate programs and sponsorships.
+> 
+> Mark Pritchard,
+> Director of Search and Technology,
+> AI Platform Services,
+> SEEK Limited
 
 ## When should you use a bitmap?
 

@@ -29,12 +29,16 @@ contentTwoTitle = "Portable"
 
 contentOneBody = """Roaring is found in
 
+* [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL Engine,
 * [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.co),
-* [Metamarkets' Druid](http://druid.io/),
+* [Apache Druid](http://druid.io/),
 * [Apache Spark](http://spark.apache.org),
 * [Apache Hive](http://hive.apache.org),
 * [Apache Tez](http://tez.apache.org),
+* [Apache Zeppelin](https://zeppelin.apache.org),
+* [Apache Doris](http://doris.incubator.apache.org),
 * [Apache CarbonData](https://carbondata.apache.org),
+* [Yandex ClickHouse](https://clickhouse.yandex),
 * [Netflix Atlas](https://github.com/Netflix/atlas),
 * [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
 * [OpenSearchServer](http://www.opensearchserver.com),
@@ -49,6 +53,11 @@ contentOneBody = """Roaring is found in
 * [Jive Miru](https://github.com/jivesoftware/miru),
 * [Gaffer](https://github.com/gchq/Gaffer),
 * [Apache Hivemall](http://hivemall.incubator.apache.org),
+* [lindb](https://github.com/lindb/lindb),
+* [Elasticell](https://github.com/deepfabric/elasticell),
+* [SourceGraph](https://github.com/sourcegraph/sourcegraph),
+* [M3](https://github.com/m3db/m3),
+* [trident](https://github.com/NetApp/trident),
 * eBay's [Apache Kylin](http://kylin.io). """
 
 contentTwoBody = """There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages:
@@ -57,6 +66,7 @@ contentTwoBody = """There are freely available software libraries providing Roar
 * [C, C++](https://github.com/RoaringBitmap/CRoaring),
 * [Go](https://github.com/RoaringBitmap/roaring),
 * [C#](https://github.com/RogueException/CRoaring.Net),
+* [Swift](https://github.com/RoaringBitmap/SwiftRoaring),
 * [Rust](https://github.com/saulius/croaring-rs),
 * [Swift](https://github.com/piotte13/SwiftRoaring),
 * [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
