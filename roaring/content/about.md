@@ -11,6 +11,7 @@ Roaring bitmaps are compressed bitmaps which tend to outperform conventional com
 
 Roaring bitmaps are used by several important systems:
 
+*   [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL query engine,
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
 *   [Apache Hive](http://hive.apache.org),
 *   [Apache Tez](http://tez.apache.org),

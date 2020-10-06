@@ -29,6 +29,7 @@ contentTwoTitle = "Portable"
 
 contentOneBody = """Roaring is found in
 
+* [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL Engine,
 * [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.co),
 * [Apache Druid](http://druid.io/),
 * [Apache Spark](http://spark.apache.org),
@@ -67,6 +68,7 @@ contentTwoBody = """There are freely available software libraries providing Roar
 * [C#](https://github.com/RogueException/CRoaring.Net),
 * [Swift](https://github.com/RoaringBitmap/SwiftRoaring),
 * [Rust](https://github.com/saulius/croaring-rs),
+* [Swift](https://github.com/piotte13/SwiftRoaring),
 * [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
 * [Node/JavaScript](https://github.com/SalvatorePreviti/roaring-node),
 * [D](https://github.com/yuce/droaring),
