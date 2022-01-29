@@ -26,6 +26,7 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
 In addition to the Java, C/C++, Python and Go versions described above, there are many other ports.
 
 * C++: [izenelib](https://github.com/izenecloud/izenelib/blob/master/include/am/bitmap/RoaringBitmap.h) by izenecloud
+* Rust: [A better compressed bitset in Rust](https://github.com/RoaringBitmap/roaring-rs)
 * Cython: [Roaring Bitmap in Cython](https://github.com/andreasvc/roaringbitmap) by Andreas van Cranenburgh
 * C#: A [.NET library for compressed bit set data structures](https://github.com/BitSetsNet/BitSetsNet)
 * C#: A [C# implementation of Roaring Bitmap](https://github.com/mgholam/MGRB) used by [RaptorDB](https://github.com/mgholam/RaptorDB-Document)
