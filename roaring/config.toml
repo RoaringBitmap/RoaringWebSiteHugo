@@ -58,7 +58,9 @@ contentOneBody = """Roaring is found in
 * [SourceGraph](https://github.com/sourcegraph/sourcegraph),
 * [M3](https://github.com/m3db/m3),
 * [trident](https://github.com/NetApp/trident),
-* eBay's [Apache Kylin](http://kylin.io). """
+* Circonus' [IRONdb time-series database](https://www.circonus.com/2017/01/introducing-irondb/),
+* Apache Kylin](http://kylin.io).
+ """
 
 contentTwoBody = """There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages:
 
