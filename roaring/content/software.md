@@ -15,6 +15,7 @@ maintain a portable [format specification](https://github.com/RoaringBitmap/Roar
   *   We have a [**Node**/JavaScript library wrapping our C code](https://github.com/SalvatorePreviti/roaring-node).
   *   We have a [**WebAssembly** library wrapping our C code](https://github.com/SalvatorePreviti/roaring-wasm).
   *   We have a [**D** library wrapping our C code](https://github.com/yuce/droaring).
+  *   We have a [**zig** library wrapping our C code](https://github.com/jwhear/roaring-zig).
   *   We have a [**Redis** Module wrapping our C code](https://github.com/aviggiano/redis-roaring).
   *   We have a [**PostgreSQL** Extension wrapping our C code](https://github.com/ChenHuajun/pg_roaringbitmap).
   *   We have a [**Greenplum** Extension wrapping our C code](https://github.com/zeromax007/gpdb-roaringbitmap).
