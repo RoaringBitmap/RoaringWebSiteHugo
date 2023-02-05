@@ -38,7 +38,8 @@ Roaring bitmaps are used by several important systems:
 *   [SourceGraph](https://github.com/sourcegraph/sourcegraph),
 *   [M3](https://github.com/m3db/m3),
 *   [trident](https://github.com/NetApp/trident),
-*   eBay's [Apache Kylin](http://kylin.io).
+*   eBay's [Apache Kylin](http://kylin.io),
+*   [Weaviate](https://weaviate.io)
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
 
