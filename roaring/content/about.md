@@ -22,7 +22,7 @@ Roaring bitmaps are used by several important systems:
 *   [Apache CarbonData](https://carbondata.apache.org),
 *   [Yandex ClickHouse](https://clickhouse.yandex),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
-*   [LinkedIn Pinot](https://github.com/linkedin/pinot/wiki),
+*   [Apache Pinot](https://pinot.apache.org),
 *   [OpenSearchServer](http://www.opensearchserver.com),
 *   [Cloud Torrent](https://github.com/jpillora/cloud-torrent),
 *   [Whoosh](https://pypi.python.org/pypi/Whoosh/),
