@@ -38,7 +38,7 @@ contentOneBody = """Roaring is found in
 * [Apache Zeppelin](https://zeppelin.apache.org),
 * [Apache Doris](http://doris.incubator.apache.org),
 * [Apache CarbonData](https://carbondata.apache.org),
-* [Yandex ClickHouse](https://clickhouse.yandex),
+* [ClickHouse](https://clickhouse.com),
 * [Netflix Atlas](https://github.com/Netflix/atlas),
 * [Apache Pinot](https://pinot.apache.org),
 * [OpenSearchServer](http://www.opensearchserver.com),
@@ -57,9 +57,12 @@ contentOneBody = """Roaring is found in
 * [Elasticell](https://github.com/deepfabric/elasticell),
 * [SourceGraph](https://github.com/sourcegraph/sourcegraph),
 * [M3](https://github.com/m3db/m3),
+* [FrostDB](https://github.com/polarsignals/frostdb),
+* [StarRocks](https://github.com/StarRocks/starrocks),
+* [Redpanda](https://github.com/redpanda-data/redpanda),
 * [trident](https://github.com/NetApp/trident),
 * Circonus' [IRONdb time-series database](https://www.circonus.com/2017/01/introducing-irondb/),
-* Apache Kylin](http://kylin.io).
+* [Apache Kylin](http://kylin.io).
  """
 
 contentTwoBody = """There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages:
