@@ -1,13 +1,196 @@
-{{ "<!-- BEGIN MAIN CONTENT -->" | safeHTML }}
-<section class="main-content">
-	<div class="wrapper row">
-		<div class="small-12 medium-6 column content-one">
-			<h1>{{ .Site.Params.main.contentOneTitle }}</h1>
-			<p>{{ .Site.Params.main.contentOneBody | markdownify }}</p>
-		</div>
-		<div class="small-12 medium-6 column content-two">
-			<h1>{{ .Site.Params.main.contentTwoTitle }}</h1>
-			<p>{{ .Site.Params.main.contentTwoBody | markdownify }}</p>
-		</div>
-	</div>
-</section> {{ "<!-- END MAIN CONTENT -->" | safeHTML }}
+{{/* ---------- Features ---------- */}}
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Why Roaring</span>
+      <h2 class="section-title">Compressed bitsets, without the trade-offs</h2>
+      <p class="section-lede">Roaring bitmaps combine the speed of uncompressed bitsets with the memory efficiency of compression — and consistently outperform older formats like WAH, EWAH, and Concise.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Fast by design</h3>
+        <p>Random access in constant time. Set operations are implemented as native bitwise AND/OR/ANDNOT on dense chunks — often hundreds of times faster than run-length-encoded alternatives.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Adaptive storage</h3>
+        <p>Each 65 536-integer chunk picks the best container — array, bitmap, or run — so dense, sparse, and clustered data are all encoded efficiently and without manual tuning.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg>
+        </div>
+        <h3>Portable format</h3>
+        <p>A published <a href="https://github.com/RoaringBitmap/RoaringFormatSpec/">serialization specification</a> means bitmaps written by one implementation can be read by any other — across Java, C, Go, Rust, Python, and more.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>Battle-tested at scale</h3>
+        <p>Powering YouTube's SQL engine, Apache Lucene, Druid, Spark, ClickHouse, Elasticsearch, Pinot, and dozens more — handling billions of operations daily.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Backed by research</h3>
+        <p>Published in <em>Software: Practice and Experience</em> and recommended by independent benchmarking studies. Read the <a href="https://arxiv.org/pdf/1603.06549.pdf">papers</a>.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>Open community</h3>
+        <p>Apache 2.0 licensed. Developed in the open on GitHub by 40+ contributors across academia and industry. Discussion happens on the <a href="https://groups.google.com/g/roaring-bitmaps">user group</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---------- Quote ---------- */}}
+<section class="section section-alt">
+  <div class="container">
+    <div class="quote-card">
+      <div class="quote-mark">&ldquo;</div>
+      <blockquote>Use Roaring for bitmap compression whenever possible. Do not use other bitmap compression methods.</blockquote>
+      <div class="quote-attrib">
+        Wang et al., <a href="http://db.ucsd.edu/wp-content/uploads/2017/03/sidm338-wangA.pdf">An Experimental Study of Bitmap Compression vs. Inverted List Compression</a>, <strong>SIGMOD 2017</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---------- Used by ---------- */}}
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Trusted in production</span>
+      <h2 class="section-title">Used by the systems you already know</h2>
+      <p class="section-lede">Roaring is a building block in many of the world's most popular databases, search engines, and analytics platforms.</p>
+    </div>
+
+    <div class="usedby-grid">
+      <a class="usedby-pill" href="https://research.google/pubs/pub48388/">Google Procella</a>
+      <a class="usedby-pill" href="http://lucene.apache.org/core/">Apache Lucene</a>
+      <a class="usedby-pill" href="https://www.elastic.co">Elasticsearch</a>
+      <a class="usedby-pill" href="http://druid.io/">Apache Druid</a>
+      <a class="usedby-pill" href="http://spark.apache.org">Apache Spark</a>
+      <a class="usedby-pill" href="http://hive.apache.org">Apache Hive</a>
+      <a class="usedby-pill" href="https://clickhouse.com">ClickHouse</a>
+      <a class="usedby-pill" href="https://pinot.apache.org">Apache Pinot</a>
+      <a class="usedby-pill" href="http://doris.incubator.apache.org">Apache Doris</a>
+      <a class="usedby-pill" href="https://carbondata.apache.org">Apache CarbonData</a>
+      <a class="usedby-pill" href="https://github.com/Netflix/atlas">Netflix Atlas</a>
+      <a class="usedby-pill" href="https://www.influxdata.com">InfluxDB</a>
+      <a class="usedby-pill" href="http://www.blevesearch.com">Bleve</a>
+      <a class="usedby-pill" href="https://github.com/StarRocks/starrocks">StarRocks</a>
+      <a class="usedby-pill" href="https://github.com/redpanda-data/redpanda">Redpanda</a>
+      <a class="usedby-pill" href="https://github.com/polarsignals/frostdb">FrostDB</a>
+      <a class="usedby-pill" href="https://github.com/m3db/m3">M3</a>
+      <a class="usedby-pill" href="https://github.com/sourcegraph/sourcegraph">SourceGraph</a>
+      <a class="usedby-pill" href="https://weaviate.io">Weaviate</a>
+      <a class="usedby-pill" href="http://kylin.io">Apache Kylin</a>
+      <a class="usedby-pill" href="https://github.com/lindb/lindb">LinDB</a>
+      <a class="usedby-pill" href="https://zeppelin.apache.org">Apache Zeppelin</a>
+      <a class="usedby-pill" href="http://tez.apache.org">Apache Tez</a>
+      <a class="usedby-pill" href="https://www.visualstudio.com/team-services/">Microsoft VSTS</a>
+    </div>
+
+    <p style="text-align:center; margin-top: 36px;">
+      <a class="btn btn-secondary" href="/about">See the full list and case studies →</a>
+    </p>
+  </div>
+</section>
+
+{{/* ---------- Languages / ecosystem ---------- */}}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Pick your stack</span>
+      <h2 class="section-title">Available in every major language</h2>
+      <p class="section-lede">Maintained reference libraries and community ports cover the entire ecosystem. All implementations are interoperable through the shared <a href="https://github.com/RoaringBitmap/RoaringFormatSpec/">format specification</a>.</p>
+    </div>
+
+    <div class="langs">
+      <a class="lang" href="https://github.com/RoaringBitmap/RoaringBitmap/">
+        <span class="lang-badge">Java</span>
+        <span><span class="lang-name">RoaringBitmap</span><br><span class="lang-meta">Reference Java library</span></span>
+      </a>
+      <a class="lang" href="https://github.com/RoaringBitmap/CRoaring">
+        <span class="lang-badge">C/C++</span>
+        <span><span class="lang-name">CRoaring</span><br><span class="lang-meta">Optimized C/C++ implementation</span></span>
+      </a>
+      <a class="lang" href="https://github.com/RoaringBitmap/roaring">
+        <span class="lang-badge">Go</span>
+        <span><span class="lang-name">roaring</span><br><span class="lang-meta">Pure Go implementation</span></span>
+      </a>
+      <a class="lang" href="https://github.com/RoaringBitmap/roaring-rs">
+        <span class="lang-badge">Rust</span>
+        <span><span class="lang-name">roaring-rs</span><br><span class="lang-meta">Pure Rust port</span></span>
+      </a>
+      <a class="lang" href="https://github.com/Ezibenroc/PyRoaringBitMap">
+        <span class="lang-badge">Py</span>
+        <span><span class="lang-name">PyRoaringBitMap</span><br><span class="lang-meta">CRoaring binding</span></span>
+      </a>
+      <a class="lang" href="https://github.com/SalvatorePreviti/roaring-node">
+        <span class="lang-badge">JS</span>
+        <span><span class="lang-name">roaring-node</span><br><span class="lang-meta">Node.js / JavaScript</span></span>
+      </a>
+      <a class="lang" href="https://github.com/RogueException/CRoaring.Net">
+        <span class="lang-badge">C#</span>
+        <span><span class="lang-name">CRoaring.Net</span><br><span class="lang-meta">.NET binding</span></span>
+      </a>
+      <a class="lang" href="https://github.com/RoaringBitmap/SwiftRoaring">
+        <span class="lang-badge">Swift</span>
+        <span><span class="lang-name">SwiftRoaring</span><br><span class="lang-meta">Swift binding</span></span>
+      </a>
+      <a class="lang" href="https://github.com/jwhear/roaring-zig">
+        <span class="lang-badge">Zig</span>
+        <span><span class="lang-name">roaring-zig</span><br><span class="lang-meta">Zig binding</span></span>
+      </a>
+      <a class="lang" href="https://github.com/yuce/droaring">
+        <span class="lang-badge">D</span>
+        <span><span class="lang-name">droaring</span><br><span class="lang-meta">D language binding</span></span>
+      </a>
+      <a class="lang" href="https://github.com/ChenHuajun/pg_roaringbitmap">
+        <span class="lang-badge">SQL</span>
+        <span><span class="lang-name">pg_roaringbitmap</span><br><span class="lang-meta">PostgreSQL extension</span></span>
+      </a>
+      <a class="lang" href="https://github.com/aviggiano/redis-roaring">
+        <span class="lang-badge">Redis</span>
+        <span><span class="lang-name">redis-roaring</span><br><span class="lang-meta">Redis module</span></span>
+      </a>
+    </div>
+
+    <p style="text-align:center; margin-top: 36px;">
+      <a class="btn btn-secondary" href="/software">Browse all implementations →</a>
+    </p>
+  </div>
+</section>
+
+{{/* ---------- Get started ---------- */}}
+<section class="section">
+  <div class="container container-narrow" style="text-align:center;">
+    <h2>Get started in seconds</h2>
+    <p class="section-lede" style="margin-bottom: 28px;">Add Roaring to your favorite language — the API is small, the format is portable, and the performance is uncompromising.</p>
+    <div class="hero-cta" style="justify-content:center;">
+      <a href="https://github.com/RoaringBitmap" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.57.1.78-.25.78-.55v-1.93c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.93 10.93 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.18c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        Browse on GitHub
+      </a>
+      <a href="/about" class="btn btn-secondary">Read the introduction</a>
+    </div>
+  </div>
+</section>

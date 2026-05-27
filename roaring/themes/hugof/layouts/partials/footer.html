@@ -1,35 +1,41 @@
-{{ "<!-- BEGIN FOOTER -->" | safeHTML }}
-<footer>
-<div class="wrapper row small-up-1 medium-up-3">
-		
-		<div class="column">
-		<!--	<h4>Contact Info</h4>-->
-		<!--	<hr>-->
-                        
-			<!--<a><span>Phone </span>{{ .Site.Params.footer.phone }}</a>-->
-			<a href="mailto:{{ .Site.Params.footer.email }}">{{ .Site.Params.footer.emailtext }}</a>
-			<!--<a><span>Address </span>{{ .Site.Params.footer.address }}</a>-->
-		</div>
-		
-		<div class="column">
-			<h4>Links</h4>
-			<hr>
-			{{ $currentNode := . }}
-			{{ range .Site.Menus.main }}
-			<a class="nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name}}</a>
-			{{end}}
-		</div>
-		
-		<div class="column">
-			<h4>Social</h4>
-			<hr>
-			{{ $currentNode := . }}
-			{{ range .Site.Menus.social }}
-			<a class="nav-item{{if or ($currentNode.IsMenuCurrent "social" .) ($currentNode.HasMenuCurrent "social" .) }} active{{end}}" href="{{.URL}}">{{ .Name}}</a>
-			{{end}}
-		</div>
-                       
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="{{ .Site.BaseURL }}{{ .Site.Params.image.IconURL }}" alt="">
+          <span>{{ .Site.Title }}</span>
+        </div>
+        <p>{{ .Site.Params.meta.description }} — a high-performance compressed bitset used by many of the world's most popular data systems.</p>
+      </div>
 
-	</div>
-</footer> {{ "<!-- END FOOTER -->" | safeHTML }}
-	
+      <div class="footer-col">
+        <h5>Project</h5>
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+
+      <div class="footer-col">
+        <h5>Community</h5>
+        {{ range .Site.Menus.social }}
+          <a href="{{ .URL }}" rel="noopener">{{ .Name }}</a>
+        {{ end }}
+        <a href="mailto:{{ .Site.Params.footer.email }}">{{ .Site.Params.footer.emailtext }}</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="https://github.com/RoaringBitmap/RoaringFormatSpec/" rel="noopener">Format spec</a>
+        <a href="https://arxiv.org/pdf/1603.06549.pdf" rel="noopener">Research paper</a>
+        <a href="/publications">Publications</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ now.Format "2006" }} Roaring Bitmaps contributors. Released under the Apache License 2.0.</span>
+      <span>Built with <a href="https://gohugo.io/" rel="noopener">Hugo</a>.</span>
+    </div>
+  </div>
+</footer>

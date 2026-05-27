@@ -1,17 +1,32 @@
-{{ "<!-- BEGIN NAV BAR DESKTOP -->" | safeHTML }}
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="{{ .Site.BaseURL }}">
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.image.IconURL }}" alt="">
+      <span>{{ .Site.Title }}</span>
+    </a>
 
-<nav class="top-bar nav-desktop " style="background-repeat: no-repeat; background-position:  1% 1%; background-size: contain; background-image: url(/{{ .Site.Params.image.ImageURL }});"><!-- {{ .Site.Params.image.ImageCredit }}-->
-	<div class="wrapper">
-		<div class="top-bar-left" >
-			<a href="{{ .Site.BaseURL }}"><h3 class="site-logo">{{ .Site.Title }}</h3></a>
-		</div>
-  		<div class="top-bar-right">
-        	<ul class="menu horizontal menu-desktop">
-			{{ $currentNode := . }}	
-			{{ range .Site.Menus.main }}
-          	<li><a class="nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name}}</a></li>
-			{{end}}
-        	</ul>
-  	  	</div>
-	</div>
-</nav> {{ "<!-- END NAV BAR DESKTOP -->" | safeHTML }}
+    <nav>
+      <ul class="nav-links">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+          <li><a class="{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <a class="nav-cta" href="https://github.com/RoaringBitmap" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.57.1.78-.25.78-.55v-1.93c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.93 10.93 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.18c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+      </svg>
+      GitHub
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>

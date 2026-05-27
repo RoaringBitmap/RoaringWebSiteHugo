@@ -4,109 +4,49 @@ title = "Roaring Bitmaps"
 languageCode = "en-us"
 theme = "hugof"
 enableRobotsTXT = true
-SectionPagesMenu = ["main", "social"]
+SectionPagesMenu = "main"
 
 [params.image]
-ImageURL = "roaring.jpg"
-IconURL = "roaring.jpg"
+ImageURL    = "roaring.jpg"
+IconURL     = "roaring.jpg"
 ImageCredit = "Picture credit: tambako"
 
 [params.meta]
-description = "Roaring Bitmaps"
-keywords = "open source, compression, java, go, c, c++"
+description = "Roaring bitmaps are a high-performance compressed bitset format used by Apache Lucene, Spark, Druid, ClickHouse, and many more."
+keywords    = "roaring bitmaps, compressed bitset, bitmap index, open source, java, go, c, c++, rust, python"
 
 [params.hero]
-herotitle = "A better compressed bitset"
-herodiscription = "Roaring bitmaps are compressed bitmaps. They can be hundreds of times faster."
-heroquote = """>Use Roaring for bitmap compression whenever possible. Do not use other bitmap compression methods ([Wang et al., SIGMOD 2017](http://db.ucsd.edu/wp-content/uploads/2017/03/sidm338-wangA.pdf))"""
-btnblue = "Grab one of our research papers"
-btnblueurl = "https://arxiv.org/pdf/1603.06549.pdf"
-btngreen = "Roaring Bitmaps on GitHub"
-btngreenurl = "https://github.com/RoaringBitmap/"
-[params.main]
-contentOneTitle = "Widely used"
-contentTwoTitle = "Portable"
-
-contentOneBody = """Roaring is found in
-
-* [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL Engine,
-* [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elasticsearch](https://www.elastic.co),
-* [Apache Druid](http://druid.io/),
-* [Apache Spark](http://spark.apache.org),
-* [Apache Hive](http://hive.apache.org),
-* [Apache Tez](http://tez.apache.org),
-* [Apache Zeppelin](https://zeppelin.apache.org),
-* [Apache Doris](http://doris.incubator.apache.org),
-* [Apache CarbonData](https://carbondata.apache.org),
-* [ClickHouse](https://clickhouse.com),
-* [Netflix Atlas](https://github.com/Netflix/atlas),
-* [Apache Pinot](https://pinot.apache.org),
-* [OpenSearchServer](http://www.opensearchserver.com),
-* [Cloud Torrent](https://github.com/jpillora/cloud-torrent),
-* [Whoosh](https://pypi.python.org/pypi/Whoosh/),
-* [InfluxDB](https://www.influxdata.com),
-* [Pilosa](https://www.pilosa.com/),
-* [Bleve](http://www.blevesearch.com),
-* [Microsoft Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/),
-* [Intel's Optimized Analytics Package (OAP)](https://github.com/Intel-bigdata/OAP),
-* [Tablesaw](https://github.com/jtablesaw/tablesaw),
-* [Jive Miru](https://github.com/jivesoftware/miru),
-* [Gaffer](https://github.com/gchq/Gaffer),
-* [Apache Hivemall](http://hivemall.incubator.apache.org),
-* [lindb](https://github.com/lindb/lindb),
-* [Elasticell](https://github.com/deepfabric/elasticell),
-* [SourceGraph](https://github.com/sourcegraph/sourcegraph),
-* [M3](https://github.com/m3db/m3),
-* [FrostDB](https://github.com/polarsignals/frostdb),
-* [StarRocks](https://github.com/StarRocks/starrocks),
-* [Redpanda](https://github.com/redpanda-data/redpanda),
-* [trident](https://github.com/NetApp/trident),
-* Circonus' [IRONdb time-series database](https://www.circonus.com/2017/01/introducing-irondb/),
-* [Apache Kylin](http://kylin.io).
- """
-
-contentTwoBody = """There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages:
-
-* [Java](https://github.com/lemire/RoaringBitmap/),
-* [C, C++](https://github.com/RoaringBitmap/CRoaring),
-* [Go](https://github.com/RoaringBitmap/roaring),
-* [C#](https://github.com/RogueException/CRoaring.Net),
-* [Swift](https://github.com/RoaringBitmap/SwiftRoaring),
-* [Rust wrapper](https://github.com/saulius/croaring-rs),
-* [Rust port](https://github.com/RoaringBitmap/roaring-rs),
-* [Swift](https://github.com/piotte13/SwiftRoaring),
-* [Python](https://github.com/Ezibenroc/PyRoaringBitMap),
-* [Node/JavaScript](https://github.com/SalvatorePreviti/roaring-node),
-* [D](https://github.com/yuce/droaring),
-* ...
-
-There is a serialized [format specification](https://github.com/RoaringBitmap/RoaringFormatSpec/) for interoperability between implementations."""
-
+herotitle        = "A better **compressed bitset**"
+herodiscription  = "Roaring bitmaps are compressed bitmaps that combine the speed of uncompressed bitsets with the memory efficiency of compression — often hundreds of times faster than older formats."
+heroquote        = ""
+btnblue          = "Read the paper"
+btnblueurl       = "https://arxiv.org/pdf/1603.06549.pdf"
+btngreen         = "Star on GitHub"
+btngreenurl      = "https://github.com/RoaringBitmap/"
 
 [params.footer]
 emailtext = "Get in touch"
-email = "lemire@gmail.com"
-[[menu.main]]
-name = "About"
-url = "/about"
+email     = "lemire@gmail.com"
 
 [[menu.main]]
-name = "Software"
-url = "/software"
+name   = "About"
+url    = "/about"
+weight = 10
 
 [[menu.main]]
-name = "Publications"
-url = "/publications"
+name   = "Software"
+url    = "/software"
+weight = 20
 
 [[menu.main]]
-name = "Talks"
-url = "/talks"
-
+name   = "Publications"
+url    = "/publications"
+weight = 30
 
 [[menu.social]]
-name = "Google Groups"
-url = "https://groups.google.com/g/roaring-bitmaps"
+name = "Google Group"
+url  = "https://groups.google.com/g/roaring-bitmaps"
 
 [[menu.social]]
-name = "Github"
-url = "http://github.com/RoaringBitmap"
+name = "GitHub"
+url  = "https://github.com/RoaringBitmap"

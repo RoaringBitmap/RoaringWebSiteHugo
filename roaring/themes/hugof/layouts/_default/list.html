@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "nav.html" . }}
+  <main>
+    <header class="page-header">
+      <div class="container container-narrow">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </header>
+    <article class="container container-narrow prose">
+      {{ .Content }}
+      <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </article>
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ .Site.BaseURL }}js/app.js" defer></script>
+</body>
+</html>

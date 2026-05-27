@@ -1,10 +1,92 @@
-{{ "<!-- BEGIN HERO PANEL -->" | safeHTML }}
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        Production-grade · Apache 2.0
+      </span>
+      <h1>{{ .Site.Params.hero.herotitle | markdownify }}</h1>
+      <p class="hero-lede">{{ .Site.Params.hero.herodiscription }}</p>
+      <div class="hero-cta">
+        <a href="{{ .Site.Params.hero.btngreenurl }}" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.57.1.78-.25.78-.55v-1.93c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.93 10.93 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.18c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+          </svg>
+          {{ .Site.Params.hero.btngreen }}
+        </a>
+        <a href="{{ .Site.Params.hero.btnblueurl }}" class="btn btn-secondary">
+          {{ .Site.Params.hero.btnblue }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span><strong>13+</strong> language bindings</span>
+        <span><strong>40+</strong> contributors</span>
+        <span><strong>Apache 2.0</strong> license</span>
+      </div>
+    </div>
 
-<section class="hero-panel">
-	<div class="wrapper">
-		<h1>{{ .Site.Params.hero.herotitle }}</h1>
-		<p>{{ .Site.Params.hero.herodiscription }}</p>
-		<a href="{{ .Site.Params.hero.btnblueurl }}" class="button primary">{{ .Site.Params.hero.btnblue }}</a>
-		<a href="{{ .Site.Params.hero.btngreenurl }}" class="button success">{{ .Site.Params.hero.btngreen }}</a>
-	</div>
-</section> {{ "<!-- END HERO PANEL -->" | safeHTML }}
+    <div class="code-card" aria-label="Code example">
+      <div class="code-card-head">
+        <span class="code-card-dot r"></span>
+        <span class="code-card-dot y"></span>
+        <span class="code-card-dot g"></span>
+        <span class="code-card-title">roaring.example</span>
+        <div class="lang-tabs">
+          <button class="lang-tab active" data-lang="java">Java</button>
+          <button class="lang-tab" data-lang="cpp">C/C++</button>
+          <button class="lang-tab" data-lang="go">Go</button>
+          <button class="lang-tab" data-lang="python">Python</button>
+        </div>
+      </div>
+
+      <div class="code-panel active" data-lang="java">
+<pre><code><span class="tok-c">// Java — RoaringBitmap</span>
+<span class="tok-k">import</span> org.roaringbitmap.RoaringBitmap;
+
+RoaringBitmap <span class="tok-fn">a</span> = RoaringBitmap.<span class="tok-fn">bitmapOf</span>(<span class="tok-n">1</span>, <span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">1000</span>);
+RoaringBitmap <span class="tok-fn">b</span> = RoaringBitmap.<span class="tok-fn">bitmapOf</span>(<span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">4</span>, <span class="tok-n">1000</span>);
+
+RoaringBitmap <span class="tok-fn">c</span> = RoaringBitmap.<span class="tok-fn">and</span>(a, b);
+System.out.<span class="tok-fn">println</span>(c.<span class="tok-fn">getCardinality</span>()); <span class="tok-c">// 3</span>
+</code></pre>
+      </div>
+
+      <div class="code-panel" data-lang="cpp">
+<pre><code><span class="tok-c">// C++ — CRoaring</span>
+<span class="tok-k">#include</span> <span class="tok-s">"roaring/roaring.hh"</span>
+<span class="tok-k">using</span> <span class="tok-t">roaring::Roaring</span>;
+
+Roaring <span class="tok-fn">a</span> = Roaring::<span class="tok-fn">bitmapOf</span>(<span class="tok-n">4</span>, <span class="tok-n">1</span>, <span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">1000</span>);
+Roaring <span class="tok-fn">b</span> = Roaring::<span class="tok-fn">bitmapOf</span>(<span class="tok-n">4</span>, <span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">4</span>, <span class="tok-n">1000</span>);
+
+Roaring c = a &amp; b;
+std::cout &lt;&lt; c.<span class="tok-fn">cardinality</span>() &lt;&lt; std::endl;
+</code></pre>
+      </div>
+
+      <div class="code-panel" data-lang="go">
+<pre><code><span class="tok-c">// Go — roaring</span>
+<span class="tok-k">import</span> <span class="tok-s">"github.com/RoaringBitmap/roaring/v2"</span>
+
+a := roaring.<span class="tok-fn">BitmapOf</span>(<span class="tok-n">1</span>, <span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">1000</span>)
+b := roaring.<span class="tok-fn">BitmapOf</span>(<span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">4</span>, <span class="tok-n">1000</span>)
+
+c := roaring.<span class="tok-fn">And</span>(a, b)
+fmt.<span class="tok-fn">Println</span>(c.<span class="tok-fn">GetCardinality</span>())
+</code></pre>
+      </div>
+
+      <div class="code-panel" data-lang="python">
+<pre><code><span class="tok-c"># Python — PyRoaringBitMap</span>
+<span class="tok-k">from</span> pyroaring <span class="tok-k">import</span> BitMap
+
+a = <span class="tok-fn">BitMap</span>([<span class="tok-n">1</span>, <span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">1000</span>])
+b = <span class="tok-fn">BitMap</span>([<span class="tok-n">2</span>, <span class="tok-n">3</span>, <span class="tok-n">4</span>, <span class="tok-n">1000</span>])
+
+<span class="tok-fn">print</span>(<span class="tok-fn">len</span>(a &amp; b))  <span class="tok-c"># 3</span>
+</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
