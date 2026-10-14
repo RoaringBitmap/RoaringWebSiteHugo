@@ -21,6 +21,7 @@ Roaring bitmaps are used by several important systems:
 *   [Apache Doris](http://doris.incubator.apache.org),
 *   [Apache CarbonData](https://carbondata.apache.org),
 *   [ClickHouse](https://clickhouse.com),
+*   [Redis](https://redis.io),
 *   [Netflix Atlas](https://github.com/Netflix/atlas),
 *   [Apache Pinot](https://pinot.apache.org),
 *   [OpenSearchServer](http://www.opensearchserver.com),
