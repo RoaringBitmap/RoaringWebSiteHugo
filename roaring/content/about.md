@@ -9,7 +9,7 @@ Roaring bitmaps are compressed bitmaps which tend to outperform conventional com
 
 >Use Roaring for bitmap compression whenever possible. Do not use other bitmap compression methods ([Wang et al., SIGMOD 2017](http://db.ucsd.edu/wp-content/uploads/2017/03/sidm338-wangA.pdf))
 
-Roaring bitmaps are used by several important systems:
+Roaring bitmaps are used by many important systems, including:
 
 *   [Google Procella](https://research.google/pubs/pub48388/): YouTube's SQL query engine,
 *   [Apache Lucene](http://lucene.apache.org/core/) and derivative systems such as Solr and [Elastic](https://www.elastic.co/),
@@ -44,7 +44,57 @@ Roaring bitmaps are used by several important systems:
 *   [ntop](https://www.ntop.org),
 *   [trident](https://github.com/NetApp/trident),
 *   eBay's [Apache Kylin](http://kylin.io),
-*   [Weaviate](https://weaviate.io).
+*   [Weaviate](https://weaviate.io),
+*   [Apache Iceberg](https://iceberg.apache.org),
+*   [Apache Paimon](https://paimon.apache.org),
+*   [Apache Flink](https://flink.apache.org),
+*   [Apache Pulsar](https://pulsar.apache.org),
+*   [Apache Impala](https://github.com/apache/impala),
+*   [Apache Gluten](https://github.com/apache/incubator-gluten),
+*   [Apache Jena](https://jena.apache.org),
+*   [Apache Fluss](https://fluss.apache.org),
+*   [Apache Celeborn](https://celeborn.apache.org),
+*   [Apache Uniffle](https://uniffle.apache.org),
+*   [Trino](https://trino.io),
+*   [Presto](https://prestodb.io),
+*   [Delta Lake](https://delta.io),
+*   [OpenSearch](https://opensearch.org),
+*   [NVIDIA cuDF](https://github.com/rapidsai/cudf),
+*   [NVIDIA cuCollections](https://github.com/NVIDIA/cuCollections),
+*   [Milvus](https://github.com/milvus-io/milvus),
+*   [YDB](https://ydb.tech),
+*   [Alibaba Tair](https://www.alibabacloud.com/help/en/redis/developer-reference/tairroaring-command),
+*   [OceanBase](https://github.com/oceanbase/oceanbase),
+*   [PolarDB-X](https://github.com/polardb/polardbx-sql),
+*   [Baidu BaikalDB](https://github.com/baidu/BaikalDB),
+*   [Groonga](https://github.com/groonga/groonga),
+*   [Deep Lake](https://github.com/activeloopai/deeplake),
+*   [Infinity](https://github.com/infiniflow/infinity),
+*   [Neo4j APOC](https://github.com/neo4j/apoc),
+*   [JetBrains YouTrackDB](https://github.com/JetBrains/youtrackdb),
+*   [Dgraph](https://github.com/dgraph-io/dgraph),
+*   [MatrixOne](https://github.com/matrixorigin/matrixone),
+*   [Disney Quanta](https://github.com/disney/quanta),
+*   [SirixDB](https://sirix.io),
+*   [EvitaDB](https://evitadb.io),
+*   [XTDB](https://xtdb.com),
+*   [Datadog Husky](https://www.datadoghq.com/blog/engineering/introducing-husky/),
+*   [Grafana](https://github.com/grafana/grafana),
+*   [Grafana Loki](https://github.com/grafana/loki),
+*   [Yandex Perforator](https://github.com/yandex/perforator),
+*   [Parca](https://github.com/parca-dev/parca),
+*   [OpenTelemetry Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib),
+*   [Zoekt](https://github.com/sourcegraph/zoekt),
+*   [Dapr](https://github.com/dapr/dapr),
+*   [SeaweedFS](https://github.com/seaweedfs/seaweedfs),
+*   [Portainer](https://github.com/portainer/portainer),
+*   [Velero](https://github.com/velero-io/velero),
+*   [StackRox](https://github.com/stackrox/stackrox),
+*   [Mattermost](https://github.com/mattermost/mattermost),
+*   [Gitea](https://github.com/go-gitea/gitea),
+*   [Erigon](https://github.com/erigontech/erigon),
+*   [Cosmos SDK](https://github.com/cosmos/cosmos-sdk),
+*   [Planetiler](https://github.com/onthegomap/planetiler).
 
 There are freely available software libraries providing Roaring bitmaps in almost all the popular programming languages (Java, C, C++, Go, C#, Rust, Python...).
 
